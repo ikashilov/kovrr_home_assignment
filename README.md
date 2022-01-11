@@ -19,7 +19,7 @@ Open `task2_report.html`
 
 ### Task 3
 It all depends on how our infrastructure is organized. Here are the few examples:
-1. The most naive approach is to wrap the `job()` call into `while(time.sleep(24*3600))` loop $;)
+1. The most naive approach is to wrap the `job()` call into `while(time.sleep(24*3600))` loop ;)
 2. The second approach is to use [cron](https://en.wikipedia.org/wiki/Cron)
-3. If we run our apps in k8s we use [CromJob](https://en.wikipedia.org/wiki/Cron)
-4. We might run all our jobs in Aache [Airflow](https://airflow.apache.org/)
+3. If we run our apps in k8s we can use [CromJob](https://en.wikipedia.org/wiki/Cron)
+4. We might run all our jobs in [Apache Airflow](https://airflow.apache.org/)

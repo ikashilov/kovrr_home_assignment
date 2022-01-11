@@ -3,8 +3,8 @@ import sys
 import argparse
 import pandas as pd
 
-DEFAULT_INPUT_FNAME = 'hacker_news_data.json'
-DEFAULT_OUTPUT_FNAME = 'hourly_agg.csv'
+DEFAULT_INPUT_FNAME = './input/hacker_news_data.json'
+DEFAULT_OUTPUT_FNAME = './output/hourly_agg.csv'
 
 def job(df: pd.DataFrame) -> None:
     df.assign(words_in_title=df['title'].str.split().str.len().fillna(0)) \
